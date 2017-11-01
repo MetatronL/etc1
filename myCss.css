@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+}
+
+.black, .hover-black:hover {
+    color: #fff !important;
+    background-color: #000 !important;
+}
+
+.bar {
+    width: 100%;
+    overflow: hidden;
+}
+.bar .bar-item {
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    outline: none;
+    display: block;
+}
+
+.bar .button {
+    white-space: normal;
+}
+
+.button:hover {
+    color: #000 !important;
+    background-color: #ccc !important;
+}
+
+
+.top, .bottom {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+	top: 0;
+}
+
+.card, .card-2 {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.padding-large {
+    padding: 12px 24px !important;
+}
+
+.large {
+    font-size: 18px !important;
+}
+.red, .hover-red:hover {
+    color: #fff !important;
+    background-color: #f44336 !important;
+}
+
+.bar, h1, button {
+    font-family: "Montserrat", sans-serif;
+}
+
+.center {
+    text-align: center !important;
+}
+
+.dblock{
+	
+	display: block;
+}
+
+.extra_large_padding{
+	padding: 128px 16px;
+}
+
+.jumbo {
+    font-size: 64px !important;
+}
