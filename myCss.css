@@ -1,5 +1,6 @@
 body {
     margin: 0;
+	background-color:#25303F;
 }
 
 .black, .hover-black:hover {
@@ -88,3 +89,28 @@ body {
     cursor: pointer;
     white-space: nowrap;
 }
+
+.content {
+    max-width: 980px;
+    margin: auto;
+        margin-top: auto;
+}
+
+.section, .code {
+    margin-top: 16px !important;
+    margin-bottom: 16px !important;
+}
+
+.input {
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+
+.border {
+    border: 1px solid #ccc !important;
+}
+
+.left{text-align:left!important}
