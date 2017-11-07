@@ -1,0 +1,123 @@
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+	background-color: #f8f8f8;
+}
+
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+	box-sizing: border-box;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body{
+		font: 20px Montserrat, sans-serif;
+	
+}
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+.navbar-brand {
+  
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.bg-1 {
+    background-color: #0d1245;
+    color: #ffffff;
+}
+
+.bg-2 {
+    background-color: #153e25;
+    color: #ffffff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.margin {
+    margin-bottom: 45px;
+}
+
+.img-circle {
+    border-radius: 50%;
+	overflow: hidden;
+	
+}
+
+div #myGrid{
+		margin-bottom: 128px;
+	
+}
+
+.row{
+	content:"";
+	display:table;
+	clear:both
+}
+
+
+.third {
+    width: 33.33333%;
+	float: left;
+}
+
+.img1{
+	
+	width:100%;
+}
+
+img {
+    border-style: none;
+	margin-bottom: -7px;
+}
+
+.img-responsive {
+     display: inline-block;
+    max-width: 100%;
+   /* height: auto;*/
+	vertical-align: middle;
+	box-sizing: border-box;
+}
+
+.logo{
+width:350px;
+ height:350px;
+
+ 
+	
+}
+
+@media screen and (max-width: 480px) {
+    logo{
+			width:150px;
+			height:150px;
+			margin-left:10%;
+			margin-right:10%
+	}
+}
