@@ -67,6 +67,13 @@ a {
 .center {
     text-align: center!important;
 }
+.left{
+	text-align: left!important;
+}
+
+.right{
+	text-align: right!important;
+}
 
 .margin {
     margin-bottom: 45px;
@@ -198,4 +205,15 @@ td,th{
 		padding-left :16px;
 		padding-right:16px;
 	
+}
+
+article:nth-of-type(odd) {
+    background: #631313;
+}
+article{
+		color: white;
+}
+
+article:nth-of-type(even) {
+    background: #161645;
 }
