@@ -1,3 +1,8 @@
+body{
+	background-color:#ac9383;
+
+}
+
 .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -57,7 +62,10 @@ a {
 }
 
 .text-center {
-    text-align: center;
+    text-align: center!important;
+}
+.center {
+    text-align: center!important;
 }
 
 .margin {
@@ -70,9 +78,10 @@ a {
 	
 }
 
-div #myGrid{
-		margin-bottom: 128px;
-	
+.myGrid{
+		/*margin-bottom: 128px;*/
+		/*padding-bottom:16px;*/
+		background-color: #606060;
 }
 
 .row{
@@ -83,8 +92,28 @@ div #myGrid{
 
 
 .third {
-    width: 33.33333%;
+    width: 100%;
 	float: left;
+}
+
+@media (min-width:601px){
+		.third{
+			width:33.33333%;
+		}
+	
+}
+
+.half{
+	width: 100%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+@media (min-width:601px){
+		.half{
+			width:50%;
+		}
+	
 }
 
 .img1{
@@ -114,10 +143,59 @@ width:350px;
 }
 
 @media screen and (max-width: 480px) {
-    logo{
+    .logo{
 			width:150px;
 			height:150px;
 			margin-left:10%;
 			margin-right:10%
 	}
+}
+
+table, td {
+   border: 1px solid black;
+}
+
+th{
+	 border: 1px solid red;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}	
+ 
+	
+td,th{
+		width:25%;
+}
+
+.tbl1{
+  align-self: center;	
+	
+}
+
+.table_holder{
+
+  justify-content: center;
+ 
+	
+}
+
+@media screen and (max-width: 480px){
+		table,.full1{
+				display : none;
+		}
+}
+
+.full1{
+		width : 100%;
+		background-color : #423f3f;
+		color:#ffffff;
+		
+}
+
+.padding-16{
+		padding-left :16px;
+		padding-right:16px;
+	
 }
