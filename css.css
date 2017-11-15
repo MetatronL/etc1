@@ -1,4 +1,7 @@
-/ gradient , opacitate , animatii . coloaane multiple , ancora , map , em vs, flex , 
+/ gradient , opacitate , animatii . coloaane multiple , ancora , map , em vw, flex , 
+//done: em vw
+// ancora
+//multiple column
 
 body{
 	background-color:#ac9383;
@@ -45,7 +48,7 @@ a {
   
     height: 50px;
     padding: 15px 15px;
-    font-size: 18px;
+    font-size: 0.8em;
     line-height: 20px;
 	/*float:left;*/
 	/*display:inline-block;*/
@@ -369,10 +372,17 @@ div.rw2:nth-child(3n+3){
 }
 
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: 600px){
 		.video1{
 			width:32%;
 		}
+		.myTitle{
+				font-size: 5vw;
+		}
+		.structure{
+			column-count: 3;
+		}
+		
 		
 		
 		
@@ -389,7 +399,7 @@ div.rw2:nth-child(3n+3){
 		.navbar-brand {
 			height: 00px;
 			padding: 0px 0px;
-			font-size: 18px;
+			font-size: 0.8em;
 			line-height: initial;
 			float: none;
 			display: initial;;
@@ -402,6 +412,7 @@ div.rw2:nth-child(3n+3){
 			display:none;
 			
 		}
+		
 		
 }
 
@@ -428,3 +439,5 @@ article {
 	height:auto;
 	
 }
+
+
