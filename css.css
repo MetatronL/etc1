@@ -1,7 +1,10 @@
-/ gradient , opacitate , animatii . coloaane multiple , ancora , map , em vw, flex , 
+// gradient , opacitate , animatii . coloaane multiple , ancora , map , em vw, flex , 
 //done: em vw
 // ancora
 //multiple column
+//gradient
+//opacity
+// animatii culoare
 
 body{
 	background-color:#ac9383;
@@ -236,6 +239,7 @@ td,th{
 		width : 100%;
 		background-color : #423f3f;
 		color:#ffffff;
+		 opacity: 0.8;
 		
 }
 
@@ -246,14 +250,16 @@ td,th{
 }
 
 article:nth-of-type(odd) {
-    background: #631313;
+    /*background: #631313;*/
+	background: linear-gradient(to bottom right, #631313, #ff4100);
 }
 article{
 		color: white;
 }
 
 article:nth-of-type(even) {
-    background: #161645;
+    /*background: #161645;*/
+	background: linear-gradient(to bottom right, #161645, #3b5146);
 }
 
 
@@ -440,4 +446,28 @@ article {
 	
 }
 
+.forest1{
+	animation: pulse 5s infinite;
+}
+@keyframes pulse {
+  0% {
+    background-color: #001F3F;
+  }
+  100% {
+    background-color: #153e25;
+  }
+}
+.element {
+  transform: rotate(25deg);
+    animation: roll 3s infinite;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
