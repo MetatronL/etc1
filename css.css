@@ -457,11 +457,12 @@ article {
     background-color: #153e25;
   }
 }
+/*
 .element {
   transform: rotate(25deg);
     animation: roll 3s infinite;
 }
-
+*/
 @keyframes roll {
   0% {
     transform: rotate(0);
