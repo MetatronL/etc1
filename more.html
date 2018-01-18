@@ -3,23 +3,68 @@
 <html lang="en">
 	<head>
 		
+		<style>
+		p.a {
+			line-height: 0;
+		}
+
+		div.b {
+			display:inline-block;
+			padding: 5px;
+
+			background: #fff;
+			border: 1px solid #aaa;
+			cursor: pointer;
+		}
+
+		div.b:hover {
+			border: 1px solid #faa;
+			background: #fdd;
+		}
+			
+		p.className1{
+			color:red;	
+		}
+			
+		.forDragAndDrop{
+			min-width :46%;	
+			min-height:10% 
+			
+		}
+			
+		.mainDiv{
+			overflow:hidden;
+			width:100%;
+			height:100%;
+	
+		}
+			
+			#div1 {
+				width: 350px;
+				height: 70px;
+				padding: 10px;
+				border: 1px solid #aaaaaa;
+			}
+			
+			
+		</style>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="author" content="Paun Bogdan Gabriel">
 		<meta name="description" content="Proiect 1">
-		
+		<script src="javascriptMainFile.js"></script> 
 		
 		<link rel="stylesheet" type="text/css" href="css.css">
 		<title>More about Nature</title>
 		
 	</head>
 	
-	<body>
+	<body  onload="justloaded()"  onmousedown="showCoords(event)"  onkeypress="showChar(event);">
 		<nav class=" navbar " >
-			<div class = "container">
+			<div class = "container" id = "parent">
 			
       
 					<a  class="navbar-brand" href="home.html">HOME</a>
-					<a  class="navbar-brand" href="#">CONTACT </a>
+					<a  class="navbar-brand" href="#"  id="son" >CONTACT </a>
 					
 
 					
@@ -43,16 +88,87 @@
 		</nav>
 		
 		<header class="container-fluid bg-1 text-center">
+			<p id="dateZone" > Error loading current Date </p>
+			<p id="afterDateZone" > - </p>
+			<p id="afterAfterDateZone" > - </p>
+			<p id="mouse1" > - </p>
+			<p id="keyboard1" > Pressed keys are: </p>
 			  <h3 class="margin myTitle">Where can i learn about nature ?</h3>
-			  <img src="forest/12.jpg" class="img-responsive img-circle margin logo " style="display:inline"  alt="more" >
+			<div class="mainDiv" >
+				  <div class="forDragAndDrop " >
+				  <img src="forest/12.jpg" id="logoMore" class="img-responsive img-circle margin logo " style="display:inline"  alt="more" >
+				</div>
+				
+				<div class="forDragAndDrop ">
+				  
+				</div>
+			</div>
 			  <h3>Within the various uses of the word today, "nature" often refers to geology and wildlife. 
 			  Nature can refer to the general realm of living plants and animals,
 			  and in some cases to the processes associated with inanimate objects - the way that particular types of things exist and change of their own accord,
 			  such as the weather and geology of the Earth. 
 			  </h3>
+			
+			
+			
+			<br>
+			<div>
+				<input type="radio" id="contactChoice1" name="contact" value="email">
+				<label for="contactChoice1">Email</label>
+
+				<input type="radio" id="contactChoice2" name="contact" value="phone">
+				<label for="contactChoice1">Email</label>
+
+				<input type="radio" id="contactChoice3" name="contact" value="Homing Pidgeon">
+				<label for="contactChoice1">Email</label>
+				 
+			</div>
+			<div>
+				<button type="submit">Submit</button>
+			 </div>
+			
+			<p id="random1" > </p>
+			<p id="random2" > </p>
+			<button type="button" onclick="alert('Hello world!')">Alert!</button>
+			
+			<p>What drink do you prefer? </p>
+			 <select>
+			  <option value="Coke">Coke</option>
+			  <option value="Pepsi">Pepsi</option>
+			  <option value="Vodka">Vodka</option>
+			  <option value="Jagermeister">Jagermeister</option>
+			</select> 
+			
+			<br>
+			<div class="b">1
+				<div class="b">2
+					<div class="b">3
+						<div class="b">4
+							<div class="b">5</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section id="log"></section>
+			
+			<div id="listHolder" > </div>
+			<button type="button" onclick="alertFromLocalStorage(); "  > Alert Data from Local Storage </button >
+			<br>
+			<button type="button" onclick="setLocalStorage(); "  > Set Data In Local Storage </button >
+			
+			
+			<br>
+			
+			<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<br>
+			<div id="drag1"  style="background-color:red" draggable="true" ondragstart="drag(event)" width="336" height="69">
+				<p> A </p>
+			</div>
+			
 		</header>
 			
 		<main>
+			
 			<div class="video-container"  >
 				<video class="video1"  controls>
 					  <source src="videos/1.mp4" type="video/mp4">
@@ -77,10 +193,13 @@
 			
 			
 			</div>
+			
 		
 			<div class="incontainer icontainer ">
 				<iframe src="https://en.m.wikipedia.org/wiki/Nature" class=" iframe1" allowfullscreen></iframe> 
 			</div>
+			
+			
 			
 			
 		
@@ -95,6 +214,7 @@
 		
 		
 	</body>	
+	
 	
 	
 	
